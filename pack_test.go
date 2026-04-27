@@ -8,6 +8,8 @@ import (
 	"io/fs"
 	"strings"
 	"testing"
+
+	osfs "github.com/grokify/oscompat/fs"
 )
 
 func TestPack(t *testing.T) {
@@ -79,7 +81,7 @@ func TestSkillMDFormat(t *testing.T) {
 	}
 
 	// Normalize line endings for cross-platform compatibility
-	s := strings.ReplaceAll(string(content), "\r\n", "\n")
+	s := osfs.NormalizeLineEndings(string(content))
 	if !strings.HasPrefix(s, "---\n") {
 		t.Error("SKILL.md should start with YAML frontmatter (---)")
 	}
