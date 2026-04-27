@@ -1,4 +1,4 @@
-github.com/grokify/oscompat v0.2.1-0.20260427082317-9a0bdb78f745 h1:b6uGZmRe7gxkbHs5NsnGCSnZvoLFrt1tOpL+ETbpfRE=
-github.com/grokify/oscompat v0.2.1-0.20260427082317-9a0bdb78f745/go.mod h1:Ekex/WzHaA39LNt5xbeQRASo74NEXAIqBlqdvNF2oUM=
+github.com/grokify/oscompat v0.3.0 h1:OsZNfRRLkfShSBu8jOLwtVQLj9/gOw3UjVe//XeV5uU=
+github.com/grokify/oscompat v0.3.0/go.mod h1:Ekex/WzHaA39LNt5xbeQRASo74NEXAIqBlqdvNF2oUM=
 github.com/plexusone/omniskill v0.7.0 h1:zH4SkKirNOatQT5/E8Z7I4AkaF3GjR2Vm36183s0AEw=
 github.com/plexusone/omniskill v0.7.0/go.mod h1:bM9/D9LfGYWlMiSlOk7uR1rhDokHmJuU4zgfaGafj3c=
