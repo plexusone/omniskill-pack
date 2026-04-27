@@ -78,7 +78,8 @@ func TestSkillMDFormat(t *testing.T) {
 		t.Fatalf("ReadFile(github/SKILL.md) failed: %v", err)
 	}
 
-	s := string(content)
+	// Normalize line endings for cross-platform compatibility
+	s := strings.ReplaceAll(string(content), "\r\n", "\n")
 	if !strings.HasPrefix(s, "---\n") {
 		t.Error("SKILL.md should start with YAML frontmatter (---)")
 	}
