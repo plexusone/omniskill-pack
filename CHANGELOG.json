@@ -1,0 +1,29 @@
+{
+  "irVersion": "1.0",
+  "project": "omniagent-skills",
+  "repository": "https://github.com/plexusone/omniagent-skills",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["plexusone"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-04-26",
+      "highlights": [
+        { "description": "Initial release with 18 OpenClaw-compatible markdown skills" }
+      ],
+      "added": [
+        { "description": "`pack.SkillPack` implementation for embedding skills via go:embed", "commit": "f63e8e9" },
+        { "description": "Core skills: github, tmux, weather, coding-agent", "commit": "f63e8e9" },
+        { "description": "Utility skills: notion, slack, trello, gh-issues, summarize, openai-whisper-api, xurl, healthcheck, blogwatcher, gemini", "commit": "f63e8e9" },
+        { "description": "Meta skills: session-logs, oracle, skill-creator, goplaces", "commit": "f63e8e9" },
+        { "description": "`Default()` function returning skill pack instance", "commit": "f63e8e9" },
+        { "description": "`VERSION` file tracking OpenClaw source commit (d4eb236)", "commit": "f63e8e9" }
+      ],
+      "documentation": [
+        { "description": "README with usage examples and skill list", "commit": "dbfbf94" },
+        { "description": "MIT License", "commit": "dbfbf94" }
+      ]
+    }
+  ]
+}
