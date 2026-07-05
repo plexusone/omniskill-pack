@@ -1,11 +1,30 @@
 {
   "irVersion": "1.0",
-  "project": "omniagent-skills",
-  "repository": "https://github.com/plexusone/omniagent-skills",
+  "project": "omniskill-pack",
+  "repository": "https://github.com/plexusone/omniskill-pack",
   "versioning": "semver",
   "commitConvention": "conventional",
   "maintainers": ["plexusone"],
   "releases": [
+    {
+      "version": "v0.2.0",
+      "date": "2026-07-05",
+      "highlights": [
+        { "description": "Renamed from `omniagent-skills` to `omniskill-pack` for consistency with omniskill ecosystem" }
+      ],
+      "refactored": [
+        { "description": "Rename module from `github.com/plexusone/omniagent-skills` to `github.com/plexusone/omniskill-pack`", "commit": "70eadac" },
+        { "description": "Update `Pack.Name()` to return `omniskill-pack`", "commit": "70eadac" }
+      ],
+      "documentation": [
+        { "description": "Update README badges and shields", "commit": "51e69e7" },
+        { "description": "Update LICENSE file", "commit": "2ad386a" }
+      ],
+      "dependencies": [
+        { "description": "Bump `github.com/plexusone/omniskill` from v0.7.0 to v0.9.0", "commit": "abe7b1b" },
+        { "description": "Bump `github.com/grokify/oscompat` from v0.3.0 to v0.4.0", "commit": "5d326b0" }
+      ]
+    },
     {
       "version": "v0.1.0",
       "date": "2026-04-26",
