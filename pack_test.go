@@ -15,8 +15,8 @@ import (
 func TestPack(t *testing.T) {
 	p := Default()
 
-	if p.Name() != "omniagent-skills" {
-		t.Errorf("Name() = %q, want %q", p.Name(), "omniagent-skills")
+	if p.Name() != "omniskill-pack" {
+		t.Errorf("Name() = %q, want %q", p.Name(), "omniskill-pack")
 	}
 
 	version := strings.TrimSpace(p.Version())

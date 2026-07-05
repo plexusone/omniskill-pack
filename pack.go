@@ -2,7 +2,7 @@
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
 
-// Package skills provides a default skill pack for omniagent.
+// Package skills provides a skill pack with OpenClaw-compatible markdown skills.
 //
 // This pack bundles 18 markdown skills from OpenClaw for use with
 // any omniskill-compatible agent. Skills are embedded at compile time
@@ -10,10 +10,10 @@
 //
 // Usage:
 //
-//	import skills "github.com/plexusone/omniagent-skills"
+//	import skills "github.com/plexusone/omniskill-pack"
 //
-//	agent, _ := omniagent.NewAgent(config,
-//	    omniagent.WithSkillPack(skills.Default()),
+//	agent, _ := agent.New(config,
+//	    agent.WithSkillPack(skills.Default()),
 //	)
 package skills
 
@@ -30,11 +30,11 @@ var skillsFS embed.FS
 //go:embed VERSION
 var version string
 
-// Pack implements pack.SkillPack for the default omniagent skills.
+// Pack implements pack.SkillPack for the omniskill-pack skills.
 type Pack struct{}
 
 // Name returns the pack identifier.
-func (Pack) Name() string { return "omniagent-skills" }
+func (Pack) Name() string { return "omniskill-pack" }
 
 // Version returns the OpenClaw commit hash these skills were sourced from.
 func (Pack) Version() string { return version }

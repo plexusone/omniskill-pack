@@ -1,4 +1,4 @@
-module github.com/plexusone/omniagent-skills
+module github.com/plexusone/omniskill-pack
 
 go 1.26.0
 
